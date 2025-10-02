@@ -10,16 +10,16 @@
             "vite",
             "learning"
       ],
-      "author": "Your Name",
+      "author": "Nick Luo",
       "license": "MIT",
       "repository": {
             "type": "git",
-            "url": "https://github.com/yourusername/gamify-edu.git"
+            "url": "https://github.com/BinLe1988/gamify-edu.git"
       },
       "bugs": {
-            "url": "https://github.com/yourusername/gamify-edu/issues"
+            "url": "https://github.com/BinLe1988/gamify-edu/issues"
       },
-      "homepage": "https://github.com/yourusername/gamify-edu#readme",
+      "homepage": "https://github.com/BinLe1988/gamify-edu#readme",
       "dependencies": {
             "@radix-ui/react-accordion": "^1.2.3",
             "@radix-ui/react-alert-dialog": "^1.1.6",

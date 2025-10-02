@@ -1,6 +1,17 @@
+![Build Status](https://github.com/BinLe1988/gamify-edu/workflows/CI/badge.svg)
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Node Version](https://img.shields.io/badge/node-%3E%3D18-brightgreen.svg)
+![React](https://img.shields.io/badge/react-18.3.1-blue.svg)
+
 # Gamify Education Platform
 
 A modern, gamified educational platform built with React, TypeScript, and Vite. This project transforms traditional learning into an engaging, game-like experience.
+
+## Screenshots
+
+![首页1](src/images/gamify-edu1.png)
+![首页2](src/images/gamify-edu2.png)
+![首页3](src/images/gamify-edu3.png)
 
 ## 🎮 Features
 
@@ -23,7 +34,7 @@ A modern, gamified educational platform built with React, TypeScript, and Vite. 
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/gamify-edu.git
+git clone https://github.com/BinLe1988/gamify-edu.git
 cd gamify-edu
 ```
 
@@ -37,7 +48,7 @@ npm install
 npm run dev
 ```
 
-4. Open your browser and navigate to `http://localhost:5173`
+4. Open your browser and navigate to `http://localhost:3000`
 
 ## 🛠️ Available Scripts
 

@@ -83,7 +83,7 @@ jobs:
         id: deployment
 ```
 
-Your site will be available at: `https://yourusername.github.io/gamify-edu`
+Your site will be available at: `https://BinLe1988.github.io/gamify-edu`
 
 ## 5. Project Features
 
@@ -112,7 +112,7 @@ Your GitHub project now includes:
 Add these to the top of your README.md:
 
 ```markdown
-![Build Status](https://github.com/yourusername/gamify-edu/workflows/CI/badge.svg)
+![Build Status](https://github.com/BinLe1988/gamify-edu/workflows/CI/badge.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Node Version](https://img.shields.io/badge/node-%3E%3D18-brightgreen.svg)
 ![React](https://img.shields.io/badge/react-18.3.1-blue.svg)

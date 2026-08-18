@@ -1,5 +1,5 @@
 {
-      "name": "gamify-edu",
+      "name": "@binle1988/dsh-gamify-edu",
       "version": "0.1.0",
       "description": "A modern, gamified educational platform built with React, TypeScript, and Vite",
       "keywords": [
@@ -20,6 +20,32 @@
             "url": "https://github.com/BinLe1988/gamify-edu/issues"
       },
       "homepage": "https://github.com/BinLe1988/gamify-edu#readme",
+      "type": "module",
+      "main": "lib/index.js",
+      "types": "lib/types/index.d.ts",
+      "exports": {
+            ".": {
+                  "types": "./lib/types/index.d.ts",
+                  "default": "./lib/index.js"
+            },
+            "./client": "./lib/client.js",
+            "./client.css": "./lib/client.css",
+            "./package.json": "./package.json"
+      },
+      "files": [
+            "lib",
+            "LICENSE",
+            "README.md"
+      ],
+      "dsh": {
+            "client": {
+                  "inject": [
+                        "@deepseek-ai/dsh-client-ui-conversation",
+                        "@deepseek-ai/dsh-client-runtime"
+                  ],
+                  "platform": "web"
+            }
+      },
       "dependencies": {
             "@radix-ui/react-accordion": "^1.2.3",
             "@radix-ui/react-alert-dialog": "^1.1.6",
@@ -54,7 +80,7 @@
             "input-otp": "^1.4.2",
             "lucide-react": "^0.487.0",
             "next-themes": "^0.4.6",
-            "react": "^18.3.1",
+            "react": ">=18.2.0",
             "react-day-picker": "^8.10.1",
             "react-dom": "^18.3.1",
             "react-hook-form": "^7.55.0",
@@ -65,12 +91,16 @@
             "vaul": "^1.1.2"
       },
       "devDependencies": {
+            "@tailwindcss/postcss": "^4.1.14",
             "@types/node": "^20.10.0",
+            "@types/react": "^19.2.18",
+            "@types/react-dom": "^19.2.4",
             "@vitejs/plugin-react-swc": "^3.10.2",
             "autoprefixer": "^10.4.21",
             "postcss": "^8.5.6",
             "tailwindcss": "^4.1.14",
             "tailwindcss-animate": "^1.0.7",
+            "tsdown": "^0.15.0",
             "typescript": "^5.9.3",
             "vite": "6.3.5"
       },
@@ -78,6 +108,33 @@
             "dev": "vite",
             "build": "vite build",
             "preview": "vite preview",
-            "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
+            "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+            "typecheck": "tsc -p tsconfig.client.json --noEmit",
+            "bundle": "tsdown",
+            "prepare": "npm run bundle"
+      },
+      "peerDependencies": {
+            "@deepseek-ai/cordis": ">=0.1.0-rc.7",
+            "@deepseek-ai/dsh-client-runtime": ">=0.1.0-rc.7",
+            "@deepseek-ai/dsh-client-ui-conversation": ">=0.1.0-rc.7",
+            "@deepseek-ai/dsh-client-ui-slots": ">=0.1.0-rc.7",
+            "react": ">=18.2.0"
+      },
+      "peerDependenciesMeta": {
+            "@deepseek-ai/cordis": {
+                  "optional": true
+            },
+            "@deepseek-ai/dsh-client-runtime": {
+                  "optional": true
+            },
+            "@deepseek-ai/dsh-client-ui-conversation": {
+                  "optional": true
+            },
+            "@deepseek-ai/dsh-client-ui-slots": {
+                  "optional": true
+            },
+            "react": {
+                  "optional": true
+            }
       }
 }

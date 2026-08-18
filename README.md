@@ -7,6 +7,16 @@
 
 A modern, gamified educational platform built with React, TypeScript, and Vite. This project transforms traditional learning into an engaging, game-like experience.
 
+## DeepSeek Harness Client Plugin
+
+This repository also publishes the browser-side dsh plugin `@binle1988/dsh-gamify-edu`. Install it into a dsh web profile and add the package to the profile bundle list; the plugin contributes a `Gamify Edu` launcher to the empty-session hero. The launcher opens the education surface without requiring a Host API or DeepSeek API key.
+
+```bash
+dsh plugin --profile web add @binle1988/dsh-gamify-edu
+```
+
+The standalone preview remains available through `npm run dev`. Plugin artifacts are produced with `npm run bundle`, while `npm run typecheck` validates the Client entry boundary.
+
 ## Screenshots
 
 ![首页1](src/images/gamify-edu1.png)

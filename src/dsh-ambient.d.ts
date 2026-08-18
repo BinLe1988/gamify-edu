@@ -6,7 +6,7 @@
 declare module "@deepseek-ai/cordis" {
   export interface SlotsService {
     inject(name: string, factory: () => unknown): void;
-    register(config: { name: string; id?: string }, component: unknown): unknown;
+    register(config: { name: string; id?: string; priority?: number }, component: unknown): unknown;
   }
 
   export interface Context {

@@ -11,6 +11,10 @@ export function apply(ctx: Context): void {
     {
       name: "conversation.hero.agentPreset",
       id: "gamify-edu",
+      // The built-in agent-preset chip occupies priority 0. A lower value
+      // intentionally shadows it while keeping the slot's single-owner
+      // contract valid.
+      priority: -10,
     },
     GamifyEduLauncher,
   ));
